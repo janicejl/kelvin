@@ -64,7 +64,7 @@ func main() {
 	log.Debugf("🤖 GOOS=%s, GOARCH=%s", runtime.GOOS, runtime.GOARCH)
 	log.Debugf("🤖 Current working directory: %v", workingDirectory())
 
-	go CheckForUpdate(version, *flagForceUpdate)
+	// go CheckForUpdate(version, *flagForceUpdate)
 	go validateSystemTime()
 	go handleSIGHUP()
 
